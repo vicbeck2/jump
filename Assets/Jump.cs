@@ -1,12 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Runtime.InteropServices;
 
 public class Jump : MonoBehaviour
 {
 	public GameObject floor;
 	public Vector3 force;
 	bool can_jump;
+
+	[DllImport("__Internal")]
+	private static extern void Hello();
+
+	void Start()
+	{
+		Hello();
+	}
 
 	void Update()
 	{

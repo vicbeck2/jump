@@ -10,6 +10,7 @@ build:
       - web
 
 pages:
+  image: alpine
   stage: deploy
   script:
     - mv web public
