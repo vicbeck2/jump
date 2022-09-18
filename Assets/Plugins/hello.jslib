@@ -1,6 +1,7 @@
 mergeInto(LibraryManager.library, {
 
   Hello: function () {
+	 window.onclick = () => unity.SendMessage("Cube", "Now");
     window.alert("Hello, world!");
   },
 

@@ -33,4 +33,9 @@ public class Jump : MonoBehaviour
 			can_jump = true;
 		}
 	}
+
+	public void Now ()
+	{
+		GetComponent<Renderer>().material.color = Color.red;
+	}
 }
